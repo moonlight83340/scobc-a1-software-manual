@@ -453,7 +453,7 @@ In this example, we use the directory name `samples/dip_switch`.
 
 A `CMakeLists.txt` file must be placed directly under the application directory.
 
-[source, bash]
+[source, cmake]
 ----
 # Copyright (c) 2026 Space Cubics Inc.
 # SPDX-License-Identifier: Apache-2.0
@@ -476,7 +476,7 @@ Here, the parts that need to be modified for each application are explained.
 Additional Kconfig parameters required for running the application can be specified. +  
 As this example uses GPIO, it is necessary to set `CONFIG_GPIO=y`.
 
-[source, bash]
+[source, kconfig]
 ----
 CONFIG_GPIO=y
 ----
