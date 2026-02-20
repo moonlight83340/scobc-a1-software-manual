@@ -554,7 +554,7 @@ The corresponding GPIO line and its mapping are defined in the DTS overlay file 
 Referring to the https://github.com/spacecubics/scobc-a1-sample/blob/main/boards/shields/scobc_a1_dev/scobc_a1_dev.overlay[DTS overlay file for Development Board], it can be seen that `GPIO14` of the GPIO IP core is defined with the device name `user_sw_1`. +
 Additionally, an `sw1` is assigned using the alias, which is used by the DIP Switch sample. However, this alias is not mandatory.
 
-[source, c]
+[source, dts]
 ----
 	aliases {
 		led0 = &user_led_0;
