@@ -29,7 +29,7 @@ In this example, we use the directory name `sample/hello_world`.
 
 A `CMakeLists.txt` file must be placed directly under the application directory.
 
-[source, bash]
+[source, cmake]
 ----
 # Copyright (c) 2025 Space Cubics Inc.
 # SPDX-License-Identifier: Apache-2.0
@@ -52,7 +52,7 @@ Here, the parts that need to be modified for each application are explained.
 Additional *Kconfig* parameters required for running the application can be specified. +
 For this Hello World application, no additional parameters are required, so leaving it empty is fine.
 
-[source, bash]
+[source]
 ----
 # nothing here
 ----
@@ -219,7 +219,7 @@ In this example, we use the directory name `sample/sysmon`.
 
 A `CMakeLists.txt` file must be placed directly under the application directory.
 
-[source, bash]
+[source, cmake]
 ----
 # Copyright (c) 2025 Space Cubics Inc.
 # SPDX-License-Identifier: Apache-2.0
@@ -243,7 +243,7 @@ Additional Kconfig parameters required for running the application can be specif
 In this sample, to display temperature data of type float using printf, it is necessary to enable `CONFIG_PICOLIBC_IO_FLOAT`. +
 For more information about `CONFIG_PICOLIBC_IO_FLOAT`, refer to https://docs.zephyrproject.org/latest/kconfig.html#CONFIG_PICOLIBC_IO_FLOAT[CONFIG_PICOLIBC_IO_FLOAT].
 
-[source, bash]
+[source]
 ----
 CONFIG_PICOLIBC_IO_FLOAT=y
 ----
