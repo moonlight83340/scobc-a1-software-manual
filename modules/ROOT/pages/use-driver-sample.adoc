@@ -187,7 +187,7 @@ Toggle the GPIO pin. If the toggle fails, a non-zero value will be returned.
 
 Connect the cable between your SC-OBC Module A1 and your PC, then open the console on terminal:
 
-[source, bash]
+[source, console]
 ----
 tio /dev/ttyUSB2
 ----
@@ -198,7 +198,7 @@ CAUTION: To use the Zephyr console, bit3 (RX) and bit4 (TX) of DIP Switch (_SW1_
 
 Specify the sample application directory where `CMakeLists.txt` and `prj.conf` are placed, and then build as shown below.
 
-[source, bash]
+[source, console]
 ----
 cd ~/myproject
 python3 -m venv ~/zephyrproject/.venv
@@ -209,7 +209,7 @@ west build -p always -b scobc_a1 --shield scobc_a1_dev scobc-a1-sample/samples/b
 
 Next, we'll flash the SC-OBC Module A1:
 
-[source, bash]
+[source, console]
 ----
 west flash
 ----
@@ -218,7 +218,7 @@ west flash
 
 After power-cycle the SC-OBC Module A1, you should see that the _LED11_ will blink on and off every second, and the LED state will be displayed on the console.
 
-[source, bash]
+[source, console]
 ----
 *** Booting Zephyr OS build 60e8eb54f7ae ***
 LED state: OFF
@@ -394,7 +394,7 @@ CAUTION: To access the temperature sensor on the Development Board, bit7 (SCL) a
 
 Connect the cable between your SC-OBC Module A1 and your PC, then open the console on terminal:
 
-[source, bash]
+[source, console]
 ----
 tio /dev/ttyUSB2
 ----
@@ -405,7 +405,7 @@ CAUTION: To use the Zephyr console, bit3 (RX) and bit4 (TX) of DIP Switch (_SW1_
 
 Specify the sample application directory where `CMakeLists.txt` and `prj.conf` are placed, and then build as shown below.
 
-[source, bash]
+[source, console]
 ----
 cd ~/myproject
 python3 -m venv ~/zephyrproject/.venv
@@ -416,7 +416,7 @@ west build -p always -b scobc_a1 --shield scobc_a1_dev scobc-a1-sample/samples/i
 
 Next, we'll flash the SC-OBC Module A1:
 
-[source, bash]
+[source, console]
 ----
 west flash
 ----
@@ -425,7 +425,7 @@ west flash
 
 After power-cycle the SC-OBC Module A1, you should see the temperature data retrieved from the sensor is displayed on the serial console.
 
-[source, bash]
+[source, console]
 ----
 *** Booting Zephyr OS build 60e8eb54f7ae ***
 Temperature: 31.5000 [deg]
@@ -630,7 +630,7 @@ CAUTION: To read the DIP switch state, the corresponding GPIO line must not be u
 
 Connect the cable between your SC-OBC Module A1 and your PC, then open the console on terminal:
 
-[source, bash]
+[source, console]
 ----
 tio /dev/ttyUSB2
 ----
@@ -641,7 +641,7 @@ CAUTION: To use the Zephyr console, bit3 (RX) and bit4 (TX) of DIP Switch (_SW1_
 
 Specify the sample application directory where `CMakeLists.txt` and `prj.conf` are placed, and then build as shown below.
 
-[source, bash]
+[source, console]
 ----
 cd ~/myproject
 python3 -m venv ~/zephyrproject/.venv
@@ -652,7 +652,7 @@ west build -p always -b scobc_a1 --shield scobc_a1_dev scobc-a1-sample/samples/d
 
 Next, we'll flash the SC-OBC Module A1:
 
-[source, bash]
+[source, console]
 ----
 west flash
 ----
@@ -661,7 +661,7 @@ west flash
 
 After power-cycle the SC-OBC Module A1, you should see the DIP switch state displayed on the serial console when toggling SW1[9].
 
-[source, bash]
+[source, console]
 ----
 *** Booting Zephyr OS build 60e8eb54f7ae ***
 Switch SW1[9] initial state: ON
